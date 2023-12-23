@@ -1,6 +1,7 @@
 package io.github.somehussar.BookSanitizer.listeners;
 
 import io.github.somehussar.BookSanitizer.BookSanitizerPlugin;
+import io.github.somehussar.BookSanitizer.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -10,6 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerEditBookEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
+
 
 public class PlayerListener implements Listener {
 
@@ -49,6 +51,9 @@ public class PlayerListener implements Listener {
         //Send the sanitized book data back to the event
         event.setNewBookMeta(safeData);
 
+
+        if(!Config.announceIllegalBooks)
+            return;
 
 
         boolean wasDataMessedWith = false;

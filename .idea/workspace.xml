@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d22568-2432-401f-998c-b035155ef9ce" name="Changes" comment="Book sanitization">
+    <list default="true" id="18d22568-2432-401f-998c-b035155ef9ce" name="Changes" comment="Announce illegal book making attempts">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/somehussar/BookSanitizer/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/somehussar/BookSanitizer/BookSanitizerPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/somehussar/BookSanitizer/BookSanitizerPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/somehussar/BookSanitizer/listeners/PlayerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/somehussar/BookSanitizer/listeners/PlayerListener.java" afterDir="false" />
@@ -33,7 +34,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/hussar/Desktop/BookSanitizer/src/main/java/io/github/somehussar/BookSanitizer/listeners",
+    "last_opened_file_path": "C:/Users/hussar/Desktop/BookSanitizer/src/main/java/io/github/somehussar/BookSanitizer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,8 +44,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hussar\Desktop\BookSanitizer\src\main\java\io\github\somehussar\BookSanitizer\listeners" />
       <recent name="C:\Users\hussar\Desktop\BookSanitizer\src\main\java\io\github\somehussar\BookSanitizer" />
+      <recent name="C:\Users\hussar\Desktop\BookSanitizer\src\main\java\io\github\somehussar\BookSanitizer\listeners" />
       <recent name="C:\Users\hussar\Desktop\BookSanitizer" />
       <recent name="C:\Users\hussar\Desktop\BookSanitizer\src\main\java\io\github\somehussar" />
       <recent name="C:\Users\hussar\Desktop\BookSanitizer\src\main\resources" />
@@ -61,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703373383227</updated>
-      <workItem from="1703373384460" duration="668000" />
+      <workItem from="1703373384460" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -79,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703373843961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Announce illegal book making attempts">
+      <option name="closed" value="true" />
+      <created>1703374089484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703374089484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Book sanitization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Book sanitization" />
+    <MESSAGE value="Announce illegal book making attempts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Announce illegal book making attempts" />
   </component>
 </project>
