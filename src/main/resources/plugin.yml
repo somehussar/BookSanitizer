@@ -1,0 +1,4 @@
+name: BookSanitizer
+main: io.github.somehussar.BookSanitizer.BookSanitizerPlugin
+version: 1.0
+author: Hussar
