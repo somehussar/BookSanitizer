@@ -2,3 +2,8 @@ name: BookSanitizer
 main: io.github.somehussar.BookSanitizer.BookSanitizerPlugin
 version: 1.0
 author: Hussar
+
+permissions:
+  booksanitizer.announceillegalbook:
+    description: Anyone who has this permission will be announced about any attempts to make illegal books!
+    default: op
