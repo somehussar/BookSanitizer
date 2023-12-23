@@ -48,5 +48,32 @@ public class PlayerListener implements Listener {
         BookMeta safeData = sanitizeData(sentMeta, event);
         //Send the sanitized book data back to the event
         event.setNewBookMeta(safeData);
+
+
+
+        boolean wasDataMessedWith = false;
+
+        if(sentMeta.hasEnchants())
+            wasDataMessedWith = true;
+        if(sentMeta.hasLore())
+            wasDataMessedWith = true;
+        if(!sentMeta.getAuthor().equals(event.getPlayer().getName()))
+            wasDataMessedWith = true;
+
+        ItemStack item = new ItemStack(Material.BOOK_AND_QUILL);
+        item.setItemMeta(sentMeta);
+
+        
+//        net.minecraft.server.v1_7_R4.ItemStack nmsStack = CraftItemStack.asNMSCopy(item);
+//
+//        if(nmsStack.getTag().getList("AttributeModifiers", 10).size() != 0)
+//            wasDataMessedWith = true;
+
+        if(wasDataMessedWith)
+            plugin.getServer().broadcast(
+                    String.format(""+ChatColor.GOLD+ChatColor.BOLD+"<< "+ChatColor.GREEN+ChatColor.BOLD+"Player "+ChatColor.RED+"%s "+ChatColor.GREEN+ChatColor.BOLD+"has attempted making an illegal book!", event.getPlayer().getName()),
+                    "booksanitizer.announceillegalbook"
+            );
+
     }
 }
